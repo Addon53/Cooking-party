@@ -1,0 +1,86 @@
+ /* Стили для кнопок. */
+
+ a {
+  padding: 3px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #240090;
+  margin: 0px;
+  color: #fff;
+  border-radius: 0px;
+}
+
+/* Настройка расположения элементов. */
+.container {
+  display: inline-block;
+  flex-direction: column;
+  height: 100px;
+  
+}
+
+.box-2 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 0px;
+}
+
+.stroka {
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+}
+
+
+.box-1 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 40px;
+}
+
+.hort{
+  width: 60px; /* Ширина слоя */
+  margin: 2px; /* Значение отступов */
+  /* border: 2px solid black; /* Параметры границы */
+  /* padding: 5px; /* Поля вокруг текста */
+
+}
+
+.child {
+  width: 350px;
+}
+
+
+/* Большие экраны */
+.box-1{
+  display: flex;
+  flex-flow: row wrap;
+  /* Центрируем элементы, равномерно распределяя пустое пространство вокруг элементов */
+  justify-content: center;
+}
+/* Маленькие экраны */
+@media all and (max-width: 500px) {
+  .box-1 {
+    justify-content: center;
+       
+  }
+}
+
+@media all and (max-width: 500px) {
+  .box-2 {
+    justify-content: flex-start;
+    height: 35px;
+  }
+}
+
+/* Маленькие экраны */
+@media all and (max-width: 500px) {
+  .container {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  }
+}
+
