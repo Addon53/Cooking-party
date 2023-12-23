@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Cooking party</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/Иконка.png" type=”image/png”> 
+
+<style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active2) {
+  background-color: #111;
+}
+
+.active2 {
+  background-color: rgb(39, 153, 24);
+}
+</style>
+</head>
+
+<body>
+    <div class="stroka">
+        <div class="container"> 
+          <div class="hort"><a>Меню:</a></div>
+          <div class="hort"><a href="/index.html">Главная</a></div>
+          <div class="hort"><a class="active3" href="/forma.html">Форма</a></div>
+          <div class="hort"><a href="/aftor.html">Об авторе</a></div>
+        </div>
+    </div>
+</body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Связь с намиe</title>
+    <link href="/styles2.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <form method="post">
+        <h1>Форма связи</h1>
+        <p>За обязательными полями следует <strong><span aria-label="required">*</span></strong>.</p>
+        <section>
+            <fieldset>
+              <legend>Вошь пол</legend>
+              <ul>
+                  <li>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value="A"><font>
+                      Мужской</font>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value="K" ><font>
+                      Женский</font>
+                    </label>
+                  </li>
+                  
+              </ul>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Имя:</span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="text" id="name" name="username" required>
+            </p>
+            <p>
+              <label for="mail">
+                <span>E-mail: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="email" id="mail" name="usermail" required>
+            </p>
+            <p> 
+              <label for="pwd">
+                <span>Сообщение: </span>
+                <strong><span aria-label="required"></span></strong>
+              </label>
+              <textarea name="message"></textarea>
+            </p>
+        </section>
+        <section>
+            <p> <button type="submit" id="submit">Отправить сообщение</button> </p>
+            <script>
+                document.querySelector("#submit").onclick = function(){
+                    alert("Данные записаны");
+                  }
+            </script>
+        </section>
+    </form>
+  </body>
+
+</head>
+</html>
